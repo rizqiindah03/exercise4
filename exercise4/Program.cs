@@ -101,8 +101,6 @@ namespace exercise4
                     default:
                         Console.WriteLine("\n invalid choice");
                         break;
-
-
                 }
             }
         }
