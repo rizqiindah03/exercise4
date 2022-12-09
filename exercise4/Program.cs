@@ -16,7 +16,7 @@ namespace exercise4
         public Stack(int size)
         {
             top = -1;
-            max = size;
+            max = 36;
             indah = new string[size];
         }
         public bool isEmpty()
@@ -27,7 +27,7 @@ namespace exercise4
         }
         public void Push(int element)
         {
-            if (top == max - 1)
+            if (top == max - 36)
             {
                 Console.WriteLine("Stack is full");
                 Console.ReadLine();
@@ -68,6 +68,31 @@ namespace exercise4
                     Console.WriteLine("item[" + (i + 1) + "]: " + indah[i]);
                 }
             }    
+        }
+        static void Main(string[] indah)
+        {
+            Stack stc = new Stack(36);
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("\nStack MENU");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. exit");
+                Console.Write("select your choice: ");
+                string userInput = Console.ReadLine();
+                char ch = Convert.ToChar(userInput == "" ? "0" : userInput);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("enter an element :");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        stc.Push(num);
+                        break;
+                   
+                }
+            }
         }
 
     }
