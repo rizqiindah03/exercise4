@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,7 +25,24 @@ namespace exercise4
                 return true;
             return false;
         }
-        
+        public void Push(int element)
+        {
+            if (top == max - 1)
+            {
+                Console.WriteLine("Stack is full");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine(" push element ");
+                string userInput = Console.ReadLine();
+                top++;
+                indah[top] = userInput;
+            }
+        }
+        public void Pop()
+        {
+
         }
     }
 }
