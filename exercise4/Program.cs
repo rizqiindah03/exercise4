@@ -93,7 +93,11 @@ namespace exercise4
                     case '2':
                         stc.Pop();
                         break;
+                    case '3':
+                        stc.Display();
+                        break;
                     
+
 
                 }
             }
