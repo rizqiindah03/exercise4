@@ -90,7 +90,11 @@ namespace exercise4
                         int num = Convert.ToInt32(Console.ReadLine());
                         stc.Push(num);
                         break;
-                   
+                    case '2':
+                        stc.Pop();
+                        break;
+                    
+
                 }
             }
         }
