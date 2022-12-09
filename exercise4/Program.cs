@@ -18,22 +18,7 @@ namespace exercise4
             max = size;
             indah = new string[size];
         }
-        public bool isEmpty()
-        {
-            if (top == null)
-                return true;
-            return false;
-        }
-        public void Push(int element)
-        {
-            if (top == max -1)
-            {
-                Console.WriteLine("Stack is full");
-            }
-            else
-            {
-                indah[top++] = 
-            }
+       
         }
     }
 }
