@@ -18,7 +18,13 @@ namespace exercise4
             max = size;
             indah = new string[size];
         }
-       
+        public bool isEmpty()
+        {
+            if (top == null)
+                return true;
+            return false;
+        }
+        
         }
     }
 }
