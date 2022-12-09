@@ -54,6 +54,21 @@ namespace exercise4
                 return;
             }
         }
+        public void Display()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            else
+            {
+                for (int i = 0; i<= top; i++)
+                {
+                    Console.WriteLine("item[" + (i + 1) + "]: " + indah[i]);
+                }
+            }    
+        }
 
     }
 }
