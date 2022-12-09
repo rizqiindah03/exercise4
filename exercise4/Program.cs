@@ -42,7 +42,18 @@ namespace exercise4
         }
         public void Pop()
         {
-
+            if (isEmpty())
+            {
+                Console.WriteLine("Stack is empty");
+                top = -1;
+                return;
+            }
+            else
+            {
+                Console.WriteLine("pop element:" + indah[top--]);
+                return;
+            }
         }
+
     }
 }
