@@ -96,7 +96,11 @@ namespace exercise4
                     case '3':
                         stc.Display();
                         break;
-                    
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\n invalid choice");
+                        break;
 
 
                 }
